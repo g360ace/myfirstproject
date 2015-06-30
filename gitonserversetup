@@ -1,0 +1,23 @@
+GIT ON THE SERVER
+
+  In order to initially set up any Git server, you have to export an existing repository into a new bare repository – a repository that doesn’t contain a working directory.  In order to clone your repository to create a new bare repository, you run the clone command with the --bare option. By convention, bare repository directories end in .git
+    
+      $ git clone --bare myfirstproject myfirstproject.git
+                      
+                      OR
+  Rename the whoel directory structure.
+  
+      $ cp -Rf myfirstproject myfirstproject.git
+      
+      
+      
+NOW PUT BARE REPOSITORY IN SERVER      
+    
+    To put the bare repository user scp protocol to move to server .
+    
+    $scp -r myfirstproject.git username@yourgitserver.come:/path/to/git/location/
+    
+    
+    
+
+    
